@@ -1,8 +1,8 @@
-<% @title = "Kallio 2050" %>
+<% @title = "Kalliolaisten kaupunki 2015" %>
 
 
 
-<h1><%= @title %></h1>
+
 <div class="summary-icons">
   <div class="summary-icon"><a href="#"><i class="fa fa-github"></i></a></div>
   <div class="summary-icon"><a href="#"><i class="fa fa-github"></i></a></div>
@@ -10,6 +10,7 @@
   <div class="summary-icon"><a href="#"><i class="fa fa-github"></i></a></div>
 </div>
 
+<h1><%= @title %></h1>
 
 <h3>5 vuoden päästä</h3>
 
@@ -19,9 +20,16 @@
 
 <h3>Elämäntilanne, asumismuoto</h3>
 
+<div class="choice-graph">
+  <div class="choice choice-1" style="width: 20%">yksin</div><div class="choice choice-2" style="width: 20%">pariskunta</div><div class="choice choice-3" style="width: 20%">lapsiperhe</div><div class="choice choice-4" style="width: 20%">yhteisö</div><div class="choice choice-5" style="width: 20%">muu</div>
+</div>
+
 <h3>Tärkein kulkumuoto</h3>
 
-<h2>Minne haluamme rakentaa asuntoja?</h2>
+<div class="choice-graph">
+  <div class="choice choice-1" style="width: 25%">polkupyörä</div><div class="choice choice-2" style="width: 25%">kävely</div><div class="choice choice-3" style="width: 25%">henkilöauto</div><div class="choice choice-4" style="width: 25%">joukkoliikenne</div>
+</div>
+<h2>Asuminen</h2>
 
 <div class="mapview residential">
   <div class="g-maparea">
@@ -43,12 +51,6 @@
 
 <div class="mapview services"></div>
 
-<h2>Tärkein kulkumuoto</h2>
-<i class="fa fa-github"></i>
-Polkupyörä
-Kävely
-Henkilöauto
-Joukkoliikenne
 
 <div class="graph transportation"></div>
 

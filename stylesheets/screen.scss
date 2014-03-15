@@ -48,6 +48,8 @@ $sky: #6AABE7;
 $fire: #E2591B; 
 $wood: #6A450D; 
 $grass: #708F38;
+$piggy: #EF889D;
+$lemon: #E4D461;
 
 body {
  font-family: $default-font; 
@@ -93,14 +95,14 @@ article { @include span-columns(9 omega,12); }
 }
 
 .summary-icons {
-  width: 50%;
+  //width: 50%;
   margin: 0 auto 0 auto;
 }
 
 .summary-icon {
   display: inline-block;
   padding: $gutter-width/2;
-  font-size: 60px;
+  font-size: 74px;
 }
 
 .choice-graph {
@@ -111,6 +113,9 @@ article { @include span-columns(9 omega,12); }
   padding: 0;
   display: inline-block;
   height: 50px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 50px;
 }
 
 .choice-1 {
@@ -123,6 +128,14 @@ article { @include span-columns(9 omega,12); }
 
 .choice-3 {
   background-color: $grass;
+}
+
+.choice-4 {
+  background-color: $piggy;
+}
+
+.choice-5 {
+  background-color: $lemon;
 }
 
 .mapview {
