@@ -112,8 +112,8 @@ h4 {
 
 .page, .page-header {
   *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
+  max-width: 1080px;
+  _width: 1080px;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: auto;
@@ -126,24 +126,24 @@ h4 {
 }
 
 nav {
-  width: 23.72881%;
+  width: 23.60248%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 1.86335%;
   display: inline;
 }
 
 article {
-  width: 74.57627%;
+  width: 74.53416%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -1.125em;
   display: inline;
 }
 
 .page-footer {
   *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
+  max-width: 1080px;
+  _width: 1080px;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: auto;
@@ -155,26 +155,56 @@ article {
   clear: both;
 }
 
+.summary-icons {
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+
+.summary-icon {
+  display: inline-block;
+  padding: 0.5625em;
+  font-size: 60px;
+}
+
+.choice {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 50px;
+}
+
+.choice-1 {
+  background-color: #6aabe7;
+}
+
+.choice-2 {
+  background-color: #e2591b;
+}
+
+.choice-3 {
+  background-color: #708f38;
+}
+
 .mapview {
   background-color: #fff;
   height: 250px;
 }
 
 .g-maparea {
-  width: 66.10169%;
+  width: 66.04555%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 1.86335%;
   display: inline;
 }
 
 .g-rankingarea {
-  width: 32.20339%;
+  width: 32.0911%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 1.86335%;
   display: inline;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -1.125em;
   display: inline;
 }
 
@@ -184,8 +214,8 @@ article {
 }
 
 .footer-content {
-  padding: 1em;
-  margin: 1em 0;
+  padding: 1.125em;
+  margin: 1.125em 0;
   background-color: #ffffff;
   border-top: 3px solid #333;
 }

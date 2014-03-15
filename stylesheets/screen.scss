@@ -10,11 +10,17 @@
 @import "compass";
 @import "compass/reset";
 
+
 // GRID SETTINGS
 
-$gutter-width: 1em;
-$total-columns: 12;
-$column-width: 4em;
+$total-cols             : 12;
+$col-width              : 4.125em; // 66 / 990 * 100 = %
+$gutter-width           : 1.125em; // 12 / 990 * 100 = %
+$side-gutter-width      : 2.813em; // 45 / 1080 * 100 = % | 2.813em
+ 
+$show-grid-backgrounds  : true;
+ 
+$container-width:1080px;
 
 // TYPE SETTINGS
 
@@ -84,6 +90,39 @@ article { @include span-columns(9 omega,12); }
 
 .page-footer {
    @include container;
+}
+
+.summary-icons {
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+
+.summary-icon {
+  display: inline-block;
+  padding: $gutter-width/2;
+  font-size: 60px;
+}
+
+.choice-graph {
+}
+
+.choice {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 50px;
+}
+
+.choice-1 {
+  background-color: $sky;
+}
+
+.choice-2 {
+  background-color: $fire;
+}
+
+.choice-3 {
+  background-color: $grass;
 }
 
 .mapview {

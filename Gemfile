@@ -13,6 +13,8 @@ gem 'compass'
 gem 'susy'
 gem 'sass', '3.2.13'
 
+gem 'font-awesome-sass'
+
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
 # gem 'RedCloth'  # Textile
