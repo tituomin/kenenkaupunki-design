@@ -1,14 +1,33 @@
 <% @title = "Kallio 2050" %>
 
+<h1><%= @title %></h1>
 <h2>Minne haluamme rakentaa asuntoja?</h2>
 
-<div class="mapview residential"></div>
+<div class="mapview residential">
+  <div class="g-maparea">
+    <div class="map-content"></div>
+  </div>
+  <div class="g-rankingarea">
+    <div class="rankingarea-content">
+      <ol>
+        <li>Kallio</li>
+        <li>Arabia</li>
+        <li>Pasila</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
 
 <h2>Minne haluamme rakentaa palveluja?</h2>
 
 <div class="mapview services"></div>
 
-<h2>Miten liikumme kaupungissa?</h2>
+<h2>Tärkein kulkumuoto</h2>
+Polkupyörä
+Kävely
+Henkilöauto
+Joukkoliikenne
 
 <div class="graph transportation"></div>
+

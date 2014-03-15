@@ -7,10 +7,110 @@
 //@import "partials/layout";
 
 @import "susy";
+@import "compass";
 @import "compass/reset";
+
+// GRID SETTINGS
+
+$gutter-width: 1em;
+$total-columns: 12;
+$column-width: 4em;
+
+// TYPE SETTINGS
+
+$default-font : 'Inconsolata', sans-serif;
+
+$font-normal: 400;
+$font-bold: 700;
+
+$base-font-size: 18px;
+$base-line-height: 24px;
+
+@include establish-baseline;
+
+
+//COLORS HERE
+$color-bg: #C4EFF7;
+
+$normal: #000099;
+$hover: #990000;
+$active: #990000;
+$visited: #990000;
+$focus: #990000;
   
-.page { @include container; }
+$sky: #6AABE7;
+$fire: #E2591B; 
+$wood: #6A450D; 
+$grass: #708F38;
+
+body {
+ font-family: $default-font; 
+ font-weight: 400;
+  background-color: $color-bg;
+}
+  
+a {
+  @include link-colors($normal, $hover, $active, $visited, $focus);
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: 700;
+}
+
+h1 {
+  @include adjust-font-size-to(47.123px);
+  //font-size: 3.491em;
+}
+
+h2 {
+  @include adjust-font-size-to(38.832px);
+}
+
+h3 {
+  @include adjust-font-size-to(29.124px);
+}
+
+h4 {
+  @include adjust-font-size-to(24px);
+}
+
+.page, .page-header { 
+    @include container; 
+}
 
 nav { @include span-columns(3,12); }
 article { @include span-columns(9 omega,12); }
+
+.page-footer {
+   @include container;
+}
+
+.mapview {
+  background-color: #fff;
+  height: 250px;
+}
+
+.g-maparea {
+  @include span-columns(8,12);
+}
+
+.g-rankingarea {
+  @include span-columns(4,12);
+  @include omega;
+}
+
+.map-content {
+  @include background(image-url("map-placemarker.png"));
+  height: 200px;
+}
+
+.footer-content {
+  padding: $gutter-width;
+  margin: $gutter-width 0;
+  background-color: #ffffff;
+  border-top: 3px solid #333;
+}
+
+
 
