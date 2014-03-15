@@ -19,6 +19,8 @@ coverage
 rdoc
 pkg
 
+public/stylesheets/*
+
 ## PROJECT::SPECIFIC
 *.gem
 .rvmrc
