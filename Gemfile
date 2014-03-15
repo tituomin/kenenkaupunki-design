@@ -10,6 +10,7 @@ gem 'rack-contrib'
 
 # Use Compass and Sass
 gem 'compass'
+gem 'susy'
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
