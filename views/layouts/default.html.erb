@@ -18,9 +18,17 @@
   <body>
 
 
-      <header class="page-header">
-        <div class="page-header-content">
-          Kenen kaupunki?
+      <header class="site-header">
+        <div class="site-header-content">
+          <div class="branding"><h2>Kenen kaupunki?</h2></div>
+          <div class="site-navigation">
+          <select class="navigate-areas">
+              <option value="volvo">Kallio</option>
+              <option value="saab">Viikki</option>
+              <option value="mercedes">Pitäjänmäki</option>
+              <option value="audi">Oulunkylä</option>
+          </select>
+          </div>
         </div>
       </header>
     
@@ -32,7 +40,7 @@
     
     <footer class="page-footer">
       <div class="footer-content">
-        <p>#helsinki2050 hackathon project — Katja Virta, Timo Tuominen, <a href="http://www.twitter.com/terotik">Tero Tikkanen</a></p>
+        <p>#helsinki2050 hackathon project — Katja Virta, Timo Tuominen, Tero Tikkanen</p>
       </div>
     </footer>
     <%= javascript_include_tag('main') %>

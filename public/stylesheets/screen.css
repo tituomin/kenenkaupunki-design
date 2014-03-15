@@ -1,231 +1,60 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/*
+Syntax error: File to import not found or unreadable: susy.
+              Load paths:
+                /Users/tero/Documents/Sites/helsinki2050/kallio2050/stylesheets
+                /Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/frameworks/blueprint/stylesheets
+                /Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 9 of /Users/tero/Documents/Sites/helsinki2050/kallio2050/stylesheets/screen.scss
 
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-* html {
-  font-size: 112.5%;
-}
-
-html {
-  font-size: 18px;
-  line-height: 1.33333em;
-}
-
-body {
-  font-family: "Inconsolata", sans-serif;
-  font-weight: 400;
-  background-color: #c4eff7;
-}
-
-a {
-  color: #000099;
-  text-decoration: none;
-}
-a:visited {
-  color: #990000;
-}
-a:focus {
-  color: #990000;
-}
-a:hover {
-  color: #990000;
-}
-a:active {
-  color: #990000;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.61794em;
-  line-height: 1.52792em;
-}
-
-h2 {
-  font-size: 2.15733em;
-  line-height: 1.23609em;
-}
-
-h3 {
-  font-size: 1.618em;
-  line-height: 1.64813em;
-}
-
-h4 {
-  font-size: 1.33333em;
-  line-height: 2em;
-}
-
-.page, .page-header {
-  *zoom: 1;
-  max-width: 1080px;
-  _width: 1080px;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.page:after, .page-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-nav {
-  width: 23.60248%;
-  float: left;
-  margin-right: 1.86335%;
-  display: inline;
-}
-
-article {
-  width: 74.53416%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1.125em;
-  display: inline;
-}
-
-.page-footer {
-  *zoom: 1;
-  max-width: 1080px;
-  _width: 1080px;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.page-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.summary-icons {
-  margin: 0 auto 0 auto;
-}
-
-.summary-icon {
-  display: inline-block;
-  padding: 0.5625em;
-  font-size: 74px;
-}
-
-.choice {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  height: 50px;
-  overflow: hidden;
-  text-align: center;
-  line-height: 50px;
-}
-
-.choice-1 {
-  background-color: #6aabe7;
-}
-
-.choice-2 {
-  background-color: #e2591b;
-}
-
-.choice-3 {
-  background-color: #708f38;
-}
-
-.choice-4 {
-  background-color: #ef889d;
-}
-
-.choice-5 {
-  background-color: #e4d461;
-}
-
-.mapview {
-  background-color: #fff;
-  height: 250px;
-}
-
-.g-maparea {
-  width: 66.04555%;
-  float: left;
-  margin-right: 1.86335%;
-  display: inline;
-}
-
-.g-rankingarea {
-  width: 32.0911%;
-  float: left;
-  margin-right: 1.86335%;
-  display: inline;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1.125em;
-  display: inline;
-}
-
-.map-content {
-  background: url('../images/map-placemarker.png?1394889849');
-  height: 200px;
-}
-
-.footer-content {
-  padding: 1.125em;
-  margin: 1.125em 0;
-  background-color: #ffffff;
-  border-top: 3px solid #333;
-}
+Backtrace:
+/Users/tero/Documents/Sites/helsinki2050/kallio2050/stylesheets/screen.scss:9
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:45:in `import'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:139:in `block in compile'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/logger.rb:45:in `red'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:138:in `compile'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `each'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `block in run'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/compiler.rb:100:in `run'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/commands/update_project.rb:45:in `perform'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/bin/compass:30:in `block in <top (required)>'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/bin/compass:44:in `call'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/bin/compass:44:in `<top (required)>'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `load'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `<main>'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/bin/ruby_executable_hooks:15:in `eval'
+/Users/tero/.rvm/gems/ruby-2.0.0-p247/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: susy.\A               Load paths:\A                 /Users/tero/Documents/Sites/helsinki2050/kallio2050/stylesheets\A                 /Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/frameworks/blueprint/stylesheets\A                 /Users/tero/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.3/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 9 of /Users/tero/Documents/Sites/helsinki2050/kallio2050/stylesheets/screen.scss"; }

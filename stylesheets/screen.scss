@@ -36,7 +36,9 @@ $base-line-height: 24px;
 
 
 //COLORS HERE
-$color-bg: #C4EFF7;
+$color-bg: #eeeeee;
+$color-text: #363636;
+
 
 $normal: #000099;
 $hover: #990000;
@@ -54,7 +56,8 @@ $lemon: #E4D461;
 body {
  font-family: $default-font; 
  font-weight: 400;
-  background-color: $color-bg;
+ background-color: $color-bg;
+  color: $color-text;
 }
   
 a {
@@ -83,8 +86,42 @@ h4 {
   @include adjust-font-size-to(24px);
 }
 
-.page, .page-header { 
-    @include container; 
+.page, .site-header { 
+    @include container;
+}
+
+.branding {
+  width: 50%; 
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.site-navigation {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  text-align: right;
+}
+
+.site-header-content {
+  padding: $gutter-width/2;
+  background-color: #ffffff;
+  @include clearfix;
+}
+
+.page-header {
+  text-align: center;
+  border-bottom: solid 3px #333;
+}
+
+.navigate-areas {
+  background: #FFF;
+  font-size:40px;
+  option {
+    font-family: $default-font;
+  }
 }
 
 nav { @include span-columns(3,12); }
@@ -105,6 +142,10 @@ article { @include span-columns(9 omega,12); }
   font-size: 74px;
 }
 
+.info-section {
+  margin: $gutter-width*2 0;
+}
+
 .choice-graph {
 }
 
@@ -116,6 +157,8 @@ article { @include span-columns(9 omega,12); }
   overflow: hidden;
   text-align: center;
   line-height: 50px;
+  @include box-sizing(border-box);
+  border: 1px solid $color-bg;
 }
 
 .choice-1 {
@@ -141,6 +184,16 @@ article { @include span-columns(9 omega,12); }
 .mapview {
   background-color: #fff;
   height: 250px;
+}
+
+.rankingarea-list {
+}
+
+.rankingarea {
+  padding: $gutter-width/2;
+  font-size: 24px;
+  background: $lemon;
+  margin-bottom:  $gutter-width/2;
 }
 
 .g-maparea {
