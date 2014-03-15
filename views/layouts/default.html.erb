@@ -9,6 +9,11 @@
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <%= javascript_include_tag('jquery-2.1.0.min',
+    'underscore-min',
+    'leaflet',
+    'background_answers') %>
+
   </head>
   <body>
 
@@ -30,5 +35,6 @@
         <p>#helsinki2050 hackathon project — Katja Virta, Timo Tuominen, <a href="http://www.twitter.com/terotik">Tero Tikkanen</a></p>
       </div>
     </footer>
+    <%= javascript_include_tag('main') %>
   </body>
 </html>
