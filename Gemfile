@@ -11,6 +11,7 @@ gem 'rack-contrib'
 # Use Compass and Sass
 gem 'compass'
 gem 'susy'
+gem 'sass', '3.2.13'
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
