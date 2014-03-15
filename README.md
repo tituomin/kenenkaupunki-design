@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 What is this?
 =============
 
@@ -80,3 +81,9 @@ Learning More
 You can learn more about Serve on the GitHub project page:
 
 <http://github.com/jlong/serve>
+=======
+kallio2050
+==========
+
+Helsinki 2050 hackathon project
+>>>>>>> 7d6d182417559e1016de8ff33ecc1947cadb35e1
