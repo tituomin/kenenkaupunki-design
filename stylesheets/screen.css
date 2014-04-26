@@ -456,7 +456,7 @@ h4 {
 
 /* line 299, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .map-content {
-  background: url("/images/map-placemarker.png");
+  background: url("../images/map-placemarker.png");
   height: 200px; }
 
 /* line 304, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
