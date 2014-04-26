@@ -91,25 +91,29 @@ Pixels	Ems	Ems @ 16	% of 13
   content: "\e00d"; }
 
 /* line 31, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+.g-info-section {
+  margin: 2.25em 0; }
+
+/* line 35, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 .choice-graphs {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 35, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+/* line 39, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 nav {
   width: 23.21429%;
   float: left;
   margin-left: 0.89286%;
   margin-right: 0.89286%; }
 
-/* line 36, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+/* line 40, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 article {
   width: 73.21429%;
   float: left;
   margin-left: 0.89286%;
   margin-right: 0.89286%; }
 
-/* line 38, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+/* line 42, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 .page, .site-header {
   max-width: 900px;
   margin-left: auto;
@@ -120,7 +124,7 @@ article {
     display: block;
     clear: both; }
 
-/* line 42, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+/* line 46, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 .page-footer {
   max-width: 900px;
   margin-left: auto;
@@ -131,21 +135,21 @@ article {
     display: block;
     clear: both; }
 
-/* line 46, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+/* line 50, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 .g-choice {
   width: 23.21429%;
   float: left;
   margin-left: 0.89286%;
   margin-right: 0.89286%; }
 
-/* line 50, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+/* line 54, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 .g-maparea {
   width: 64.88095%;
   float: left;
   margin-left: 0.89286%;
   margin-right: 0.89286%; }
 
-/* line 54, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
+/* line 58, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/partials/_layout.scss */
 .g-rankingarea {
   width: 31.54762%;
   float: left;
@@ -213,14 +217,14 @@ html {
   font-size: 112.5%;
   line-height: 1.33333em; }
 
-/* line 52, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 44, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 body {
   font-family: "Inconsolata", sans-serif;
   font-weight: 400;
   background-color: #eeeeee;
   color: #363636; }
 
-/* line 59, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 51, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 a {
   color: #000099;
   text-decoration: none; }
@@ -237,38 +241,44 @@ a {
   a:active {
     color: #990000; }
 
-/* line 64, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 56, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 h1, h2, h3, h4, h5 {
   font-weight: 700; }
 
-/* line 68, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 60, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 h1 {
   font-size: 2.61794em;
   line-height: 1.27326em; }
 
-/* line 73, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 65, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 h2 {
   font-size: 2.15733em;
   line-height: 1.23609em; }
 
-/* line 77, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 69, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 h3 {
   font-size: 1.618em;
   line-height: 1.23609em; }
 
-/* line 81, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 73, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 h4 {
   font-size: 1.33333em;
   line-height: 1.5em; }
 
-/* line 87, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 77, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .branding {
   width: 70%;
   margin: 0;
   padding: 0;
   float: left; }
+  /* line 83, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  .branding h2 a {
+    color: #6aabe7; }
+  /* line 87, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  .branding h4 {
+    font-weight: 400; }
 
-/* line 94, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 92, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .site-navigation {
   width: 30%;
   margin: 0;
@@ -276,60 +286,80 @@ h4 {
   float: left;
   text-align: right; }
 
-/* line 102, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 100, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .site-header-content {
+  margin: 24px 0;
   padding: 0.5625em;
   background-color: #ffffff;
   overflow: hidden;
   *zoom: 1; }
 
-/* line 108, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 107, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .page-header {
   text-align: center;
   line-height: 32px;
   padding: 20px;
   border-top: 3px solid #363636;
   border-bottom: 3px solid #363636; }
-  /* line 114, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  /* line 113, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  .page-header h2 {
+    display: inline-block; }
+  /* line 116, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
   .page-header .header-area {
     display: inline-block;
     color: #708f38; }
 
-/* line 121, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 123, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+.header-link {
+  font-size: 32px; }
+  /* line 125, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  .header-link a {
+    color: #708f38;
+    text-decoration: none; }
+    /* line 128, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+    .header-link a:hover {
+      color: #e2591b; }
+
+/* line 134, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+.header-link-next {
+  float: right; }
+
+/* line 138, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+.header-link-prev {
+  float: left; }
+
+/* line 142, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .navigate-areas {
-  background: #FFF;
+  background: #6aabe7;
+  border: none;
   font-size: 20px;
   font-family: "Inconsolata", sans-serif; }
-  /* line 125, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  /* line 147, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
   .navigate-areas option {
     font-family: "Inconsolata", sans-serif; }
 
-/* line 132, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 154, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .summary-header {
   overflow: hidden;
   *zoom: 1;
   height: 180px;
   text-align: center; }
-  /* line 136, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  /* line 158, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
   .summary-header h3 {
     font-size: 1.33333em;
     line-height: 1.5em; }
 
-/* line 141, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 163, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .summary-icons {
   margin: 0 auto 0 auto; }
 
-/* line 145, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 167, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .summary-icon {
   display: inline-block;
   font-size: 74px;
   line-height: 74px; }
 
-/* line 153, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
-.info-section {
-  margin: 2.25em 0; }
-
-/* line 163, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 178, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice {
   margin: 0;
   padding: 0;
@@ -343,7 +373,7 @@ h4 {
   box-sizing: border-box;
   border: 1px solid #eeeeee; }
 
-/* line 175, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 190, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-chart {
   font-size: 12px;
   line-height: 14px;
@@ -351,13 +381,13 @@ h4 {
   padding: 12px;
   min-height: 260px; }
 
-/* line 183, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 198, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column {
   padding-bottom: 5px;
   overflow: hidden;
   *zoom: 1; }
 
-/* line 189, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 204, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-icon {
   width: 24px;
   float: left;
@@ -367,79 +397,85 @@ h4 {
   text-align: center;
   color: #CCC; }
 
-/* line 199, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 214, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-label {
   display: block;
   margin-left: 32px; }
 
-/* line 204, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 219, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-line-container {
   margin-left: 32px;
   margin-top: 3px;
   background: #ececec; }
-  /* line 208, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+  /* line 223, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
   .choice-line-container .choice-line {
     height: 14px; }
 
-/* line 215, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 230, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-chart-noicons .choice-label {
   margin-left: 0;
   float: left;
   width: 48px; }
-/* line 221, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 236, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-chart-noicons .choice-line-container {
   margin-left: 48px;
   margin-bottom: 6px; }
 
-/* line 228, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 243, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-1 .choice-line {
   background-color: #6aabe7; }
-/* line 231, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 246, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-1 .choice-icon {
   color: #6aabe7; }
 
-/* line 236, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 251, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-2 .choice-line {
   background-color: #e2591b; }
-/* line 239, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 254, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-2 .choice-icon {
   color: #e2591b; }
 
-/* line 244, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 259, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-3 .choice-line {
   background-color: #708f38; }
-/* line 247, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 262, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-3 .choice-icon {
   color: #708f38; }
 
-/* line 252, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 267, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-4 .choice-line {
   background-color: #ef889d; }
-/* line 255, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 270, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-4 .choice-icon {
   color: #ef889d; }
 
-/* line 260, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 275, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-5 .choice-line {
   background-color: #e4d461; }
-/* line 263, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 278, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .choice-column-5 .choice-icon {
   color: #e4d461; }
 
-/* line 268, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
-.mapview {
-  background-color: #fff;
-  overflow: hidden;
-  *zoom: 1; }
+/* line 285, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+.map-ranking-content h2 i {
+  font-size: 24px;
+  color: #708f38; }
 
-/* line 273, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 292, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+.mapview {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #fff;
+  padding: 12px; }
+
+/* line 298, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .building-map {
   position: relative;
   padding-bottom: 60%;
   height: 0;
   overflow: hidden; }
 
-/* line 280, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 305, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .building-map iframe {
   position: absolute;
   top: 0;
@@ -447,19 +483,19 @@ h4 {
   width: 100% !important;
   height: 100% !important; }
 
-/* line 292, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 317, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .rankingarea {
   padding: 0.5625em;
-  font-size: 24px;
+  font-size: 21px;
   background: #e4d461;
   margin-bottom: 0.5625em; }
 
-/* line 299, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 324, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .map-content {
   background: url("../images/map-placemarker.png");
   height: 200px; }
 
-/* line 304, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
+/* line 329, /Users/tero/Documents/Sites/helsinki2050/kallio2050/source/stylesheets/screen.scss */
 .footer-content {
   padding: 1.125em;
   margin: 1.125em 0;
