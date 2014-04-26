@@ -1,0 +1,82 @@
+/* Modular Scale ---------------------- 18px @ 1:1.618	 24px @ 1:1.618	 ----------------------
+
+Pixels	Ems	Ems @ 16	% of 13
+101.659	5.648	6.354	781.992
+76.245	4.236	4.765	586.500
+62.830	3.491	3.927	483.308
+47.123	2.618	2.945	362.485
+38.832	2.157	2.427	298.708
+29.124	1.618	1.82	224.031
+24.000	1.333	1.5	    184.615
+18.000	1	    1.125	138.462
+14.833	0.824	0.927	114.100
+11.125	0.618	0.695	85.577
+9.167	0.509	0.573	70.515
+6.876	0.382	0.43	52.892
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=maki);
+
+/* maki */
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+}
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("/fonts/flaticon.eot");
+	src: url("/fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("/fonts/flaticon.woff") format("woff"),
+	url("/fonts/flaticon.ttf") format("truetype"),
+	url("/fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-8:before {
+	content: "\e000";
+}
+.flaticon-apartments:before {
+	content: "\e001";
+}
+.flaticon-bicycle2:before {
+	content: "\e002";
+}
+.flaticon-car72:before {
+	content: "\e003";
+}
+.flaticon-city11:before {
+	content: "\e004";
+}
+.flaticon-family4:before {
+	content: "\e005";
+}
+.flaticon-frontal7:before {
+	content: "\e006";
+}
+.flaticon-like11:before {
+	content: "\e007";
+}
+.flaticon-partnership:before {
+	content: "\e008";
+}
+.flaticon-person14:before {
+	content: "\e009";
+}
+.flaticon-person19:before {
+	content: "\e00a";
+}
+.flaticon-recycle30:before {
+	content: "\e00b";
+}
+.flaticon-skyscrapers:before {
+	content: "\e00c";
+}
+.flaticon-train1:before {
+	content: "\e00d";
+}

@@ -1,0 +1,57 @@
+<% future_icon_verylikely = "fa fa-thumbs-o-up" %>
+<% future_icon_quitelikely = "fa fa-smile-o" %>
+<% future_icon_notsure = "fa fa-meh-o" %>
+<% future_icon_quiteunlikely = "fa fa-frown-o" %>
+<% future_icon_veryunlikely = "fa fa-thumbs-o-down" %>
+  
+<% future_percent_verylikely = "45" %>
+<% future_percent_quitelikely = "10" %>
+<% future_percent_notsure = "5" %>
+<% future_percent_quiteunlikely = "25" %>
+<% future_percent_veryunlikely = "5" %>
+  
+<% future_title = "Asuu alueella 5 vuoden päästä" %>
+  
+<% future_label_verylikely = "erittäin todennäköisesti" %>
+<% future_label_quitelikely = "melko todennäköisesti" %>
+<% future_label_notsure = "en osaa sanoa" %>
+<% future_label_quiteunlikely = "melko epätodennäköisesti" %>
+<% future_label_veryunlikely = "erittäin epätodennäköisesti" %>
+
+
+<div class="summary-header">
+  <div class="summary-icon">
+      <i class="maki-prison"></i>
+  </div>
+  <h3><%= future_title %></h3>
+</div>
+<div class="summary-content">
+  <div class="choice-chart">
+    
+    <div class="choice-column choice-column-1">
+      <div class="choice-icon"><i class="<%= future_icon_verylikely %>"></i></div>
+      <span class="choice-label"><%= future_label_verylikely %></span>
+      <div class="choice-line-container"><div class="choice-line choice-1" style="width: <%= future_percent_verylikely %>%"></div></div>
+    </div>
+    <div class="choice-column choice-column-2">
+      <div class="choice-icon"><i class="<%= future_icon_quitelikely %>"></i></div>
+      <span class="choice-label"><%= future_label_quitelikely %></span>
+      <div class="choice-line-container"><div class="choice-line choice-2" style="width: <%= future_percent_quitelikely %>%"></div></div>
+    </div>
+    <div class="choice-column choice-column-3">  
+      <div class="choice-icon"><i class="<%= future_icon_notsure %>"></i></div>
+      <span class="choice-label"><%= future_label_notsure %></span>
+      <div class="choice-line-container"><div class="choice-line choice-3" style="width: <%= future_percent_notsure %>%"></div></div>
+    </div>
+    <div class="choice-column choice-column-4">  
+      <div class="choice-icon"><i class="<%= future_icon_quiteunlikely %>"></i></div>
+      <span class="choice-label"><%= future_label_quiteunlikely %></span>
+      <div class="choice-line-container"><div class="choice-line choice-4" style="width: <%= future_percent_quiteunlikely %>%"></div></div>
+     </div>
+    <div class="choice-column choice-column-5"> 
+      <div class="choice-icon"><i class="<%= future_icon_veryunlikely %>"></i></div>
+      <span class="choice-label"><%= future_label_veryunlikely %></span>
+      <div class="choice-line-container"><div class="choice-line choice-5" style="width: <%= future_percent_veryunlikely %>%"></div></div>
+    </div>
+  </div>
+</div>

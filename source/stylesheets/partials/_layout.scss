@@ -1,0 +1,57 @@
+@import "compass";
+@import "susy";
+
+// GRID SETTINGS
+
+$total-columns          : 12;
+$column-width           : 4.125em; // 66 / 990 * 100 = %
+$gutter-width           : 1.125em; // 12 / 990 * 100 = %
+$side-gutter-width      : 2.813em; // 45 / 1080 * 100 = % | 2.813em
+$container-style  : magic;
+$from-direction : left;
+$omega-float: left;
+$show-grid-backgrounds  : true;
+$gutter-position: split ;
+ 
+$container-width:900px;
+
+$susy: (
+  // the basics
+  columns: $total-columns,
+  gutters: $gutter-width / $column-width,
+  column-width: $column-width,
+  gutter-position: $gutter-position, 
+  // advanced
+  container: $container-width,
+  math: if($container-style == magic, fluid, $container-style),
+  flow: if($from-direction == right, rtl, ltr),
+  last-flow: if($omega-float == $from-direction, from, to),
+);
+
+.choice-graphs {
+  @include clearfix;
+}
+
+nav { @include span(3 of 12);}
+article { @include span(last 9 of 12); }
+
+.page, .site-header { 
+  @include container;
+}
+
+.page-footer {
+   @include container;
+}
+
+.g-choice {
+  @include span(3 of 12);
+}
+
+.g-maparea {
+  @include span(8 of 12);
+}
+
+.g-rankingarea {
+  @include span(last 4 of 12);
+}
+

@@ -1,0 +1,312 @@
+//
+// Application Stylesheet
+//
+
+//@import "partials/base";
+@import "modules/all";
+@import "partials/layout";
+
+@import "compass";
+
+@include global-reset();
+
+// TYPE SETTINGS
+
+$default-font : 'Inconsolata', sans-serif;
+
+$font-normal: 400;
+$font-bold: 700;
+
+$base-font-size: 18px;
+$base-line-height: 24px;
+$round-to-nearest-half-line: true;
+
+@include establish-baseline;
+
+
+//COLORS HERE
+$color-bg: #eeeeee;
+$color-text: #363636;
+
+
+$normal: #000099;
+$hover: #990000;
+$active: #990000;
+$visited: #990000;
+$focus: #990000;
+  
+$sky: #6AABE7;
+$fire: #E2591B; 
+$wood: #6A450D; 
+$grass: #708F38;
+$piggy: #EF889D;
+$lemon: #E4D461;
+
+//$fire: #0066ff;
+
+//$sky: #00eeff;
+//$grass: #22ee00;
+//$wood: #ffc300; 
+
+
+body {
+ font-family: $default-font; 
+ font-weight: 400;
+ background-color: $color-bg;
+  color: $color-text;
+}
+  
+a {
+  @include link-colors($normal, $hover, $active, $visited, $focus);
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: 700;
+}
+
+h1 {
+  @include adjust-font-size-to(47.123px);
+  //font-size: 3.491em;
+}
+
+h2 {
+  @include adjust-font-size-to(38.832px);
+}
+
+h3 {
+  @include adjust-font-size-to(29.124px);
+}
+
+h4 {
+  @include adjust-font-size-to(24px);
+}
+
+
+
+.branding {
+  width: 70%; 
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.site-navigation {
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  text-align: right;
+}
+
+.site-header-content {
+  padding: $gutter-width/2;
+  background-color: #ffffff;
+  @include clearfix;
+}
+
+.page-header {
+  text-align: center;
+  line-height: 32px;
+  padding: 20px;
+  border-top: 3px solid $color-text;
+  border-bottom: 3px solid $color-text;
+  .header-area {
+    display: inline-block;
+    //border-bottom: 3px solid $lemon;
+    color: $grass;
+  }
+}
+
+.navigate-areas {
+  background: #FFF;
+  font-size: 20px;
+  font-family: $default-font;
+  option {
+    font-family: $default-font;
+  }
+}
+
+
+
+.summary-header {
+  @include clearfix();
+  height: 180px;
+  text-align: center;
+  h3 {
+    @include adjust-font-size-to(24px);
+  }
+}
+
+.summary-icons {
+  margin: 0 auto 0 auto;
+}
+
+.summary-icon {
+  //display: none;
+  display: inline-block;
+  //padding: $gutter-width/2;
+  font-size: 74px;
+  line-height: 74px;
+}
+
+.info-section {
+  margin: $gutter-width*2 0;
+}
+
+.choice-graph {
+}
+
+
+
+
+.choice {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 50px;
+  @include box-sizing(border-box);
+  border: 1px solid $color-bg;
+}
+
+.choice-chart {
+  font-size: 12px;
+  line-height: 14px;
+  background: #FFF;
+  padding: 12px;
+  min-height: 260px;
+}
+
+.choice-column {
+  padding-bottom: 5px;
+  //border-bottom: solid 1px #CCCCCC;
+  @include clearfix;
+}
+
+.choice-icon {
+  width: 24px;
+  float: left;
+  font-size: 18px;
+  height: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #CCC;
+}
+
+.choice-label {
+  display: block;
+  margin-left: 32px;
+}
+
+.choice-line-container {
+  margin-left: 32px;
+  margin-top: 3px;
+  background: #ececec;
+  .choice-line {
+    height: 14px;
+  }
+}
+
+.choice-chart-noicons {
+
+  .choice-label {
+    margin-left: 0;
+    float :left;
+    width: 48px;
+  }
+
+  .choice-line-container {
+    margin-left: 48px;
+    margin-bottom: 6px;
+  }
+}
+
+.choice-column-1 {
+  .choice-line {
+    background-color: $sky;
+  }
+  .choice-icon {
+    color: $sky;
+  }
+}
+.choice-column-2 {
+  .choice-line {
+  background-color: $fire;
+  }
+  .choice-icon {
+    color: $fire;
+  }
+}
+.choice-column-3 {
+  .choice-line {
+  background-color: $grass;
+  }
+  .choice-icon {
+    color: $grass;
+  }
+}
+.choice-column-4 {
+  .choice-line {
+  background-color: $piggy;
+  }
+  .choice-icon {
+    color: $piggy;
+  }
+}
+.choice-column-5 {
+  .choice-line {
+  background-color: $lemon;
+  }
+  .choice-icon {
+    color: $lemon;
+  }
+}
+
+.mapview {
+  background-color: #fff;
+  @include clearfix;
+}
+
+.building-map {
+    position: relative;
+    padding-bottom: 60%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.building-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.rankingarea-list {
+}
+
+.rankingarea {
+  padding: $gutter-width/2;
+  font-size: 24px;
+  background: $lemon;
+  margin-bottom:  $gutter-width/2;
+}
+
+.map-content {
+  @include background(image-url("map-placemarker.png"));
+  height: 200px;
+}
+
+.footer-content {
+  padding: $gutter-width;
+  margin: $gutter-width 0;
+  background-color: #ffffff;
+  border-top: 3px solid #333;
+}
+
+
+

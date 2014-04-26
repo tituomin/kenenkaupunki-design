@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <%= stylesheet_link_tag "screen" %>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <%= javascript_include_tag('jquery-2.1.0.min',
+    'underscore-min',
+    'leaflet',
+    'background_answers') %>
+
+  </head>
+  <body>
+
+
+      <header class="site-header">
+        <%= partial "partials/site-header" %>
+      </header>
+    
+      <div class="page">
+        <%= yield %>
+      </div>
+
+    
+    
+    <footer class="page-footer">
+      <div class="footer-content">
+        <p>#helsinki2050 hackathon project — Katja Virta, Timo Tuominen, Tero Tikkanen</p>
+      </div>
+    </footer>
+    <%= javascript_include_tag('main') %>
+  </body>
+</html>

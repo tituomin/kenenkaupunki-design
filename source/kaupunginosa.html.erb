@@ -1,0 +1,48 @@
+
+<% @titlearea = "Kalliolaisten" %>
+<% @titlebody = "kaupunki 2015" %>
+
+<div class="page-header">
+  <h2><span class="header-area"><%= @titlearea %></span> <%= @titlebody %></h2>
+  <div class=""></div>
+</div>
+
+<div class="info-section">
+
+<div class="choice-graphs">
+  <div class="g-choice">
+
+      <%= partial "visualizations/future-spread" %>
+  </div>
+  <div class="g-choice">
+
+      <%= partial "visualizations/family-spread" %>
+  </div>
+  <div class="g-choice">
+
+      <%= partial "visualizations/transport-spread" %>
+  </div>
+  <div class="g-choice">
+
+      <%= partial "visualizations/age-spread" %>
+  </div>
+</div>
+
+<div class="info-section">
+  [collapse >]<h2>Asuminen</h2>
+  
+  <div class="mapview residential">
+    <div class="g-maparea">
+      <%= partial "visualizations/building-map" %>
+    </div>
+    <div class="g-rankingarea">
+      <%= partial "visualizations/building-ranking" %>
+    </div>
+  </div>
+  
+</div>
+
+  
+
+</div>
+
