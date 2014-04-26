@@ -28,7 +28,6 @@ $round-to-nearest-half-line: true;
 $color-bg: #eeeeee;
 $color-text: #363636;
 
-
 $normal: #000099;
 $hover: #990000;
 $active: #990000;
@@ -41,13 +40,6 @@ $wood: #6A450D;
 $grass: #708F38;
 $piggy: #EF889D;
 $lemon: #E4D461;
-
-//$fire: #0066ff;
-
-//$sky: #00eeff;
-//$grass: #22ee00;
-//$wood: #ffc300; 
-
 
 body {
  font-family: $default-font; 
@@ -82,13 +74,19 @@ h4 {
   @include adjust-font-size-to(24px);
 }
 
-
-
 .branding {
   width: 70%; 
   margin: 0;
   padding: 0;
   float: left;
+  h2 {
+    a {
+      color: $sky;
+    }
+  }
+  h4 {
+    font-weight: 400;
+  }
 }
 
 .site-navigation {
@@ -100,6 +98,7 @@ h4 {
 }
 
 .site-header-content {
+  margin: 24px 0;
   padding: $gutter-width/2;
   background-color: #ffffff;
   @include clearfix;
@@ -111,6 +110,9 @@ h4 {
   padding: 20px;
   border-top: 3px solid $color-text;
   border-bottom: 3px solid $color-text;
+  h2 {
+    display: inline-block;
+  }
   .header-area {
     display: inline-block;
     //border-bottom: 3px solid $lemon;
@@ -118,8 +120,28 @@ h4 {
   }
 }
 
+.header-link {
+  font-size: 32px;
+  a {
+    color: $grass;
+    text-decoration: none;
+    &:hover {
+      color: $fire;
+    }
+  }
+}
+
+.header-link-next {
+  float: right;
+}
+
+.header-link-prev {
+  float: left;
+}
+
 .navigate-areas {
-  background: #FFF;
+  background: $sky;
+  border: none;
   font-size: 20px;
   font-family: $default-font;
   option {
@@ -150,15 +172,8 @@ h4 {
   line-height: 74px;
 }
 
-.info-section {
-  margin: $gutter-width*2 0;
-}
-
 .choice-graph {
 }
-
-
-
 
 .choice {
   margin: 0;
@@ -265,9 +280,19 @@ h4 {
   }
 }
 
+.map-ranking-content {
+  h2 {
+    i {
+      font-size: 24px;
+      color: $grass;
+    }
+  }
+}
+
 .mapview {
-  background-color: #fff;
   @include clearfix;
+  background-color: #fff;
+  padding: 12px;
 }
 
 .building-map {
@@ -291,7 +316,7 @@ h4 {
 
 .rankingarea {
   padding: $gutter-width/2;
-  font-size: 24px;
+  font-size: 21px;
   background: $lemon;
   margin-bottom:  $gutter-width/2;
 }

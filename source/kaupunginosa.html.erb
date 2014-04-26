@@ -3,46 +3,52 @@
 <% @titlebody = "kaupunki 2015" %>
 
 <div class="page-header">
+  <div class="header-link header-link-prev"><a href="#"><i class="fa fa-arrow-left"></i></a></div>
+  <div class="header-link header-link-next"><a href="#"><i class="fa fa-arrow-right"></i></a></div>
   <h2><span class="header-area"><%= @titlearea %></span> <%= @titlebody %></h2>
-  <div class=""></div>
+
 </div>
 
-<div class="info-section">
+<div class="g-info-section">
 
-<div class="choice-graphs">
-  <div class="g-choice">
-
-      <%= partial "visualizations/future-spread" %>
-  </div>
-  <div class="g-choice">
-
-      <%= partial "visualizations/family-spread" %>
-  </div>
-  <div class="g-choice">
-
-      <%= partial "visualizations/transport-spread" %>
-  </div>
-  <div class="g-choice">
-
-      <%= partial "visualizations/age-spread" %>
-  </div>
-</div>
-
-<div class="info-section">
-  [collapse >]<h2>Asuminen</h2>
+  <div class="choice-graphs">
+    <div class="g-choice">
   
-  <div class="mapview residential">
-    <div class="g-maparea">
-      <%= partial "visualizations/building-map" %>
+        <%= partial "visualizations/future-spread" %>
     </div>
-    <div class="g-rankingarea">
-      <%= partial "visualizations/building-ranking" %>
+    <div class="g-choice">
+  
+        <%= partial "visualizations/family-spread" %>
+    </div>
+    <div class="g-choice">
+  
+        <%= partial "visualizations/transport-spread" %>
+    </div>
+    <div class="g-choice">
+  
+        <%= partial "visualizations/age-spread" %>
     </div>
   </div>
+</div>
+
+<div class="g-info-section">
+  
+  <div class="map-ranking-content">
+    <h2>Asuminen <i class="fa fa-chevron-down"></i></h2>
+    
+    <div class="mapview residential">
+      <div class="g-maparea">
+        <%= partial "visualizations/building-map" %>
+      </div>
+      <div class="g-rankingarea">
+        <%= partial "visualizations/building-ranking" %>
+      </div>
+    </div>
+  </div>
   
 </div>
 
   
 
-</div>
+
 

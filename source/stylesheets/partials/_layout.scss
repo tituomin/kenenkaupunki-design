@@ -28,6 +28,10 @@ $susy: (
   last-flow: if($omega-float == $from-direction, from, to),
 );
 
+.g-info-section {
+  margin: $gutter-width*2 0;
+}
+
 .choice-graphs {
   @include clearfix;
 }
