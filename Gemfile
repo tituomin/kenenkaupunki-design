@@ -1,33 +1,20 @@
-source 'https://rubygems.org'
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source 'http://rubygems.org'
 
-gem 'serve', '1.5.2'
+gem "middleman", "~>3.3.2"
 
-# TryStatic
-gem 'rack-contrib'
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
 
-# Use edge instead:
-# gem 'serve', :git => 'git://github.com/jlong/serve.git'
+# For faster file watcher updates on Windows:
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
-# Use Compass and Sass
-gem 'compass'
-gem 'susy'
-gem 'sass', '3.2.13'
+# Windows does not come with time zone data
+gem "tzinfo-data", platforms: [:mswin, :mingw]
 
-gem 'font-awesome-sass'
+gem "susy", "~> 2.1.0"
 
-# Markdown and Textile
-# gem 'rdiscount' # Markdown
-# gem 'RedCloth'  # Textile
+gem "compass", "~> 1.0.0.alpha"
 
-# Other templating languages
-# gem 'erubis'
-gem 'haml'
-# gem 'slim'
-# gem 'radius'
-# gem 'less'
-
-# Coffee Script
-gem 'coffee-script'
-
-# Use mongrel for the Web server
-# gem 'mongrel'
+gem "middleman-deploy"
