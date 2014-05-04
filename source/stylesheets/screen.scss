@@ -322,8 +322,7 @@ h4 {
 }
 
 .map-content {
-  @include background(image-url("map-placemarker.png"));
-  height: 200px;
+  height: 400px;
 }
 
 .footer-content {

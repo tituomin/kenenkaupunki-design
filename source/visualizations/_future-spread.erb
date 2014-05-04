@@ -1,22 +1,16 @@
-<% future_icon_verylikely = "fa fa-thumbs-o-up" %>
-<% future_icon_quitelikely = "fa fa-smile-o" %>
-<% future_icon_notsure = "fa fa-meh-o" %>
-<% future_icon_quiteunlikely = "fa fa-frown-o" %>
-<% future_icon_veryunlikely = "fa fa-thumbs-o-down" %>
-  
-<% future_percent_verylikely = "45" %>
-<% future_percent_quitelikely = "10" %>
-<% future_percent_notsure = "5" %>
-<% future_percent_quiteunlikely = "25" %>
-<% future_percent_veryunlikely = "5" %>
+<% future_icon_erittain_todennakoisesti = "fa fa-thumbs-o-up" %>
+<% future_icon_melko_todennakoisesti = "fa fa-smile-o" %>
+<% future_icon_vaikea_sanoa = "fa fa-meh-o" %>
+<% future_icon_melko_epatodennakoisesti = "fa fa-frown-o" %>
+<% future_icon_erittain_epatodennakoisesti = "fa fa-thumbs-o-down" %>
   
 <% future_title = "Asuu alueella 5 vuoden päästä" %>
   
-<% future_label_verylikely = "erittäin todennäköisesti" %>
-<% future_label_quitelikely = "melko todennäköisesti" %>
-<% future_label_notsure = "en osaa sanoa" %>
-<% future_label_quiteunlikely = "melko epätodennäköisesti" %>
-<% future_label_veryunlikely = "erittäin epätodennäköisesti" %>
+<% future_label_erittain_todennakoisesti = "erittäin todennäköisesti" %>
+<% future_label_melko_todennakoisesti = "melko todennäköisesti" %>
+<% future_label_vaikea_sanoa = "en osaa sanoa" %>
+<% future_label_melko_epatodennakoisesti = "melko epätodennäköisesti" %>
+<% future_label_erittain_epatodennakoisesti = "erittäin epätodennäköisesti" %>
 
 
 <div class="summary-header">
@@ -26,32 +20,34 @@
   <h3><%= future_title %></h3>
 </div>
 <div class="summary-content">
-  <div class="choice-chart">
+  <div id="probability_stay_five_years" class="choice-chart">
     
     <div class="choice-column choice-column-1">
-      <div class="choice-icon"><i class="<%= future_icon_verylikely %>"></i></div>
-      <span class="choice-label"><%= future_label_verylikely %></span>
-      <div class="choice-line-container"><div class="choice-line choice-1" style="width: <%= future_percent_verylikely %>%"></div></div>
+      <div class="choice-icon"><i class="<%= future_icon_erittain_todennakoisesti %>"></i></div>
+      <span class="choice-label"><%= future_label_erittain_todennakoisesti %></span>
+      <div class="choice-line-container"><div class="choice-line choice-1" style="width: <%= data.erittain_todennakoisesti
+ %>0%"></div></div>
     </div>
     <div class="choice-column choice-column-2">
-      <div class="choice-icon"><i class="<%= future_icon_quitelikely %>"></i></div>
-      <span class="choice-label"><%= future_label_quitelikely %></span>
-      <div class="choice-line-container"><div class="choice-line choice-2" style="width: <%= future_percent_quitelikely %>%"></div></div>
+      <div class="choice-icon"><i class="<%= future_icon_melko_todennakoisesti %>"></i></div>
+      <span class="choice-label"><%= future_label_melko_todennakoisesti %></span>
+      <div class="choice-line-container"><div class="choice-line choice-2" style="width: <%= data.melko_todennakoisesti %>0%"></div></div>
     </div>
     <div class="choice-column choice-column-3">  
-      <div class="choice-icon"><i class="<%= future_icon_notsure %>"></i></div>
-      <span class="choice-label"><%= future_label_notsure %></span>
-      <div class="choice-line-container"><div class="choice-line choice-3" style="width: <%= future_percent_notsure %>%"></div></div>
+      <div class="choice-icon"><i class="<%= future_icon_vaikea_sanoa %>"></i></div>
+      <span class="choice-label"><%= future_label_vaikea_sanoa %></span>
+      <div class="choice-line-container"><div class="choice-line choice-3" style="width: <%= data.vaikea_sanoa
+ %>0%"></div></div>
     </div>
     <div class="choice-column choice-column-4">  
-      <div class="choice-icon"><i class="<%= future_icon_quiteunlikely %>"></i></div>
-      <span class="choice-label"><%= future_label_quiteunlikely %></span>
-      <div class="choice-line-container"><div class="choice-line choice-4" style="width: <%= future_percent_quiteunlikely %>%"></div></div>
+      <div class="choice-icon"><i class="<%= future_icon_melko_epatodennakoisesti %>"></i></div>
+      <span class="choice-label"><%= future_label_melko_epatodennakoisesti %></span>
+      <div class="choice-line-container"><div class="choice-line choice-4" style="width: <%= data.melko_epatodennakoisesti %>0%"></div></div>
      </div>
     <div class="choice-column choice-column-5"> 
-      <div class="choice-icon"><i class="<%= future_icon_veryunlikely %>"></i></div>
-      <span class="choice-label"><%= future_label_veryunlikely %></span>
-      <div class="choice-line-container"><div class="choice-line choice-5" style="width: <%= future_percent_veryunlikely %>%"></div></div>
+      <div class="choice-icon"><i class="<%= future_icon_erittain_epatodennakoisesti %>"></i></div>
+      <span class="choice-label"><%= future_label_erittain_epatodennakoisesti %></span>
+      <div class="choice-line-container"><div class="choice-line choice-5" style="width: <%= data.erittain_epatodennakoisesti %>0%"></div></div>
     </div>
   </div>
 </div>

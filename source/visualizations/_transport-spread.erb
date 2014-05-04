@@ -1,0 +1,44 @@
+
+<% transport_icon_henkiloauto = "maki-fuel" %>
+<% transport_icon_polkupyora = "maki-bicycle" %>
+<% transport_icon_kavely = "maki-pitch" %>
+<% transport_icon_joukkoliikenne = "maki-bus" %>
+
+<% transport_title = "Tärkein kulkumuoto" %>
+  
+<% transport_label_henkiloauto = "Henkilöauto" %>
+<% transport_label_polkupyora = "Polkupyörä" %>
+<% transport_label_kavely = "Kävely" %>
+<% transport_label_joukkoliikenne = "Joukkoliikenne" %>
+
+<div class="summary-header">
+  <div class="summary-icon">
+      <i class="maki-rail"></i>
+  </div>
+  <h3><%= transport_title %></h3>
+</div>
+<div class="summary-content">
+  <div class="choice-chart">
+    
+    <div class="choice-column choice-column-1">
+      <div class="choice-icon"><i class="<%= transport_icon_henkiloauto %>"></i></div>
+      <span class="choice-label"><%= transport_label_henkiloauto %></span>
+      <div class="choice-line-container"><div class="choice-line choice-1" style="width: <%= data.henkiloauto %>0%"></div></div>
+    </div>
+    <div class="choice-column choice-column-2">
+      <div class="choice-icon"><i class="<%= transport_icon_polkupyora %>"></i></div>
+      <span class="choice-label"><%= transport_label_polkupyora %></span>
+      <div class="choice-line-container"><div class="choice-line choice-2" style="width: <%= data.polkupyora %>0%"></div></div>
+    </div>
+    <div class="choice-column choice-column-3">  
+      <div class="choice-icon"><i class="<%= transport_icon_kavely %>"></i></div>
+      <span class="choice-label"><%= transport_label_kavely %></span>
+      <div class="choice-line-container"><div class="choice-line choice-3" style="width: <%= data.kavely %>0%"></div></div>
+    </div>
+    <div class="choice-column choice-column-4">  
+      <div class="choice-icon"><i class="<%= transport_icon_joukkoliikenne %>"></i></div>
+      <span class="choice-label"><%= transport_label_joukkoliikenne %></span>
+      <div class="choice-line-container"><div class="choice-line choice-4" style="width: <%= data.joukkoliikenne %>0%"></div></div>
+     </div>
+  </div>
+</div>

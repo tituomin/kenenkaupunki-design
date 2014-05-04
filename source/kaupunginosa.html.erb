@@ -1,11 +1,10 @@
 
-<% @titlearea = "Kalliolaisten" %>
-<% @titlebody = "kaupunki 2015" %>
+<% titlearea = "Kenen" %>
 
 <div class="page-header">
   <div class="header-link header-link-prev"><a href="#"><i class="fa fa-arrow-left"></i></a></div>
   <div class="header-link header-link-next"><a href="#"><i class="fa fa-arrow-right"></i></a></div>
-  <h2><span class="header-area"><%= @titlearea %></span> <%= @titlebody %></h2>
+  <h2><span class="header-area"><%= titlearea %></span> kaupunki 2050</h2>
 
 </div>
 
@@ -33,12 +32,12 @@
 
 <div class="g-info-section">
   
-  <div class="map-ranking-content">
-    <h2>Asuminen <i class="fa fa-chevron-down"></i></h2>
+  <div id="asuminen" class="map-ranking-content">
+    <h2>Lisää rakentamista <i class="fa fa-chevron-down"></i></h2>
     
     <div class="mapview residential">
       <div class="g-maparea">
-        <%= partial "visualizations/building-map" %>
+          <div  class="g-mapcanvas map-content"></div>
       </div>
       <div class="g-rankingarea">
         <%= partial "visualizations/building-ranking" %>
@@ -48,7 +47,55 @@
   
 </div>
 
+<div class="g-info-section">
   
+  <div id="palvelut" class="map-ranking-content">
+    <h2>Palvelut & työpaikat<i class="fa fa-chevron-down"></i></h2>
+    
+    <div class="mapview residential">
+      <div class="g-maparea">
+          <div  class="g-mapcanvas map-content"></div>
+      </div>
+      <div class="g-rankingarea">
+        <%= partial "visualizations/building-ranking" %>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="g-info-section">
+  
+  <div id="virkistys" class="map-ranking-content">
+    <h2>Virkistys <i class="fa fa-chevron-down"></i></h2>
+    
+    <div class="mapview residential">
+      <div class="g-maparea">
+          <div  class="g-mapcanvas map-content"></div>
+      </div>
+      <div class="g-rankingarea">
+        <%= partial "visualizations/building-ranking" %>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 
+<div class="g-info-section">
+  
+  <div id="ankeus" class="map-ranking-content">
+    <h2>Ankeus <i class="fa fa-chevron-down"></i></h2>
+    
+    <div class="mapview residential">
+      <div class="g-maparea">
+          <div  class="g-mapcanvas map-content"></div>
+      </div>
+      <div class="g-rankingarea">
+        <%= partial "visualizations/building-ranking" %>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
