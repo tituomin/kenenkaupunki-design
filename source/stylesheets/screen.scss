@@ -385,6 +385,24 @@ h4 {
   padding: 12px;
 }
 
+.map-legends {
+  border: 2px solid $color-text;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.map-legend--1 {
+  i {
+    color: $color-text;
+  }
+}
+
+.map-legend--2 {
+  i {
+    color: $grass;
+  }
+}
+
 .building-map {
     position: relative;
     padding-bottom: 60%; // This is the aspect ratio
@@ -402,6 +420,29 @@ h4 {
 
 
 .rankingarea-list {
+  list-style-type: upper-roman;
+}
+
+.rankingarea-list {
+	counter-reset: rank-counter;
+}
+.rankingarea-list li:before {
+    display: inline-block;
+	content: counter(rank-counter);
+	counter-increment: rank-counter;
+    font-weight: $font-bold;
+    background-color: $color-text;
+    padding: 3px;
+    line-height: 14px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: $color-bg;
+    margin-right: 14px;
+}
+
+.ranking-count {
+  color: darken($lemon, 33%);
 }
 
 .rankingarea {

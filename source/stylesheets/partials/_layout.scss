@@ -52,6 +52,10 @@ article { @include span(last 9 of 12); }
   @include span(3 of 12);
 }
 
+.g-legendarea {
+  @include span(12 of 12);
+}
+
 .g-maparea {
   @include span(8 of 12);
 }
