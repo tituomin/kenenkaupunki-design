@@ -1,9 +1,9 @@
-@import "compass";
 @import "susy";
+@import "breakpoint";
 
 // GRID SETTINGS
 
-$total-columns          : 12;
+$total-columns          : 6;
 $column-width           : 4.125em; // 66 / 990 * 100 = %
 $gutter-width           : 1.125em; // 12 / 990 * 100 = %
 $side-gutter-width      : 2.813em; // 45 / 1080 * 100 = % | 2.813em
@@ -11,7 +11,7 @@ $container-style  : magic;
 $from-direction : left;
 $omega-float: left;
 $show-grid-backgrounds  : true;
-$gutter-position: split ;
+$gutter-position: inside ;
  
 $container-width:900px;
 
@@ -37,13 +37,84 @@ $susy: (
   @include clearfix;
 }
 
-nav { @include span(3 of 12);}
-article { @include span(last 9 of 12); }
+nav { @include span(6 of 6);}
+article { @include span(9 of 12); }
 
 .page, .site-header { 
   @include container;
 }
 
+.g-page-header {
+  @include container;
+}
+  
+.g-page-header-navback {
+  @include span( 3 of 6);
+}
+
+.g-page-header-navfront {
+  @include span( 3 of 6);
+}
+
+.g-page-header-title {
+  @include span( 6 of 6);
+}
+
+.page-footer {
+   @include container;
+}
+
+.g-choice {
+  @include span(3 of 6);
+}
+
+.g-legendarea {
+  @include span(6 of 6);
+}
+
+.g-maparea {
+  @include span(6 of 6);
+}
+
+.g-rankingarea {
+  @include span(6  of 6);
+}
+
+@include susy-breakpoint(680px, 12) {
+  
+.g-info-section {
+  margin: $gutter-width*2 0;
+}
+
+.choice-graphs {
+  @include clearfix;
+}
+
+nav { @include span(3 of 12);}
+article { @include span(9 of 12); }
+
+.page, .site-header { 
+  @include container;
+}
+
+  .g-page-header {
+  @include container;
+  }
+  
+.g-page-header-navback {
+  @include span( 2 of 12);
+  @include pull (10 of 12);
+}
+
+.g-page-header-navfront {
+  @include span( 2 of 12);
+}
+
+.g-page-header-title {
+  @include span( 8 of 12);
+  @include push (2 of 12);
+}
+  
 .page-footer {
    @include container;
 }
@@ -61,6 +132,6 @@ article { @include span(last 9 of 12); }
 }
 
 .g-rankingarea {
-  @include span(last 4 of 12);
+  @include span(4 of 12);
 }
-
+}

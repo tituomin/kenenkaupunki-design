@@ -2,11 +2,11 @@
 // Application Stylesheet
 //
 
+@import "compass";
+
 //@import "partials/base";
 @import "modules/all";
 @import "partials/layout";
-
-@import "compass";
 
 @include global-reset();
 
@@ -110,22 +110,6 @@ h4 {
   @include clearfix;
 }
 
-.page-header {
-  text-align: center;
-  line-height: 32px;
-  padding: 20px;
-  border-top: 3px solid $color-text;
-  border-bottom: 3px solid $color-text;
-  h2 {
-    display: inline-block;
-  }
-  .header-area {
-    display: inline-block;
-    //border-bottom: 3px solid $lemon;
-    color: $grass;
-  }
-}
-
 .header-link {
   font-size: 32px;
   a {
@@ -137,9 +121,26 @@ h4 {
   }
 }
 
+.page-header {
+  @include clearfix;
+  padding: 12px 0;
+  border-top: 2px solid $color-text;
+  border-bottom: 2px solid $color-text;
+}
+
+.page-header-title {
+  text-align: center;
+}
+
+.header-responders-count {
+  text-align: center;
+  color: lighten($color-text, 50%);
+}
+
 .header-link-next, .header-link-next a {
   float: right;
   cursor: e-resize;
+  text-align: right;
 }
 
 .header-link-prev, .header-link-prev a {
@@ -147,9 +148,6 @@ h4 {
   cursor: w-resize;
 }
 
-.header-responders-count {
-  color: lighten($color-text, 50%);
-}
 
 .navigate-areas {
   background: $sky;
@@ -442,6 +440,7 @@ h4 {
 }
 
 .ranking-count {
+  font-size: 11px;
   color: darken($lemon, 33%);
 }
 
