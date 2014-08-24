@@ -126,6 +126,7 @@ h4 {
   padding: 12px 0;
   border-top: 2px solid $color-text;
   border-bottom: 2px solid $color-text;
+  margin-bottom: 24px;
 }
 
 .page-header-title {
@@ -174,6 +175,10 @@ h4 {
   }
 }
 
+.summary-content {
+  margin-bottom: 12px;
+}
+
 .summary-value {
   font-weight: $font-bold;
   display: inline-block;
@@ -214,7 +219,8 @@ h4 {
 .summary-icon--color-5{
     color: $lemon;
 }
-.choice-graph {
+.choice-graphs {
+  margin-bottom: 24px;
 }
 
 .choice {
@@ -234,7 +240,7 @@ h4 {
   line-height: 14px;
   background: #FFF;
   padding: 12px;
-  min-height: 260px;
+  min-height: 280px;
 }
 
 .choice-column {
@@ -381,6 +387,7 @@ h4 {
   @include clearfix;
   background-color: #fff;
   padding: 12px;
+  margin-bottom: 24px;
 }
 
 .map-legends {
@@ -406,6 +413,7 @@ h4 {
     padding-bottom: 60%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
+    margin-bottom: 12px;
 }
 
 .building-map iframe {
@@ -455,6 +463,81 @@ h4 {
   @include background(image-url("map-placemarker.png"));
   height: 200px;
 }
+
+.value-questions {
+  background: #FFF;
+  padding: 12px;
+}
+
+.value-question {
+  margin-top: 30px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $color-text;
+}
+
+.value-question-statement {
+  display: inline-block;
+  width: 30%;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.value-question-statement--first {
+  text-align: right;
+}
+
+.value-question-graphic {
+  display: inline-block;
+  position: relative;
+  width: 35%;
+  background: $piggy;
+  height: 30px;
+}
+
+.value-question-graphic-spacer {
+  position: relative;
+  background: $sky;
+  height: 30px;
+}
+
+.value-question-marker {
+  position: absolute;
+  background: $color-text;
+  color: $color-bg;
+  text-align: center;
+  line-height: 30px;
+  font-size: 21px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  top: -24px;
+  right: -15px;
+}
+
+.value-question-marker:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $color-text transparent transparent transparent;
+      top: 30px;
+      left: 10px;
+}
+
+.value-question-marker--rail {
+  //@extend maki-aboveground-rail;
+}
+
+.value-question-statement {
+}
+
+.value-question-statement--last {
+  text-align: left;
+}
+
 
 .footer-content {
   padding: $gutter-width;

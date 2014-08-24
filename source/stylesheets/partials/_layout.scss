@@ -29,8 +29,12 @@ $susy: (
   last-flow: if($omega-float == $from-direction, from, to),
 );
 
-.g-info-section {
-  margin: $gutter-width*2 0;
+.page {
+  margin: 0 12px;
+}
+
+.site-header, .g-info-section, .g-page-header { 
+  @include container;
 }
 
 .choice-graphs {
@@ -39,14 +43,6 @@ $susy: (
 
 nav { @include span(6 of 6);}
 article { @include span(9 of 12); }
-
-.page, .site-header { 
-  @include container;
-}
-
-.g-page-header {
-  @include container;
-}
   
 .g-page-header-navback {
   @include span( 3 of 6);
@@ -82,8 +78,8 @@ article { @include span(9 of 12); }
 
 @include susy-breakpoint(680px, 12) {
   
-.g-info-section {
-  margin: $gutter-width*2 0;
+.site-header, .g-info-section, .g-page-header { 
+  @include container;
 }
 
 .choice-graphs {
@@ -93,9 +89,6 @@ article { @include span(9 of 12); }
 nav { @include span(3 of 12);}
 article { @include span(9 of 12); }
 
-.page, .site-header { 
-  @include container;
-}
 
   .g-page-header {
   @include container;
