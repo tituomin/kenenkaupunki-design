@@ -189,6 +189,12 @@ h4 {
 
 .summary-value--age {
   color: $sky;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 30px;
+  border-bottom: 4px solid $sky;
+  border-top: 4px solid $sky;
+  line-height: 30px;
+  margin: 20px 0;
 }
 
 .summary-icons {
