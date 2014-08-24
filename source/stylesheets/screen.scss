@@ -41,6 +41,12 @@ $grass: #708F38;
 $piggy: #EF889D;
 $lemon: #E4D461;
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
 body {
  font-family: $default-font; 
  font-weight: 400;
@@ -98,8 +104,8 @@ h4 {
 }
 
 .site-header-content {
-  margin: 24px 0;
-  padding: $gutter-width/2;
+  margin: 0 0 24px 0;
+  padding: 24px $gutter-width/2;
   background-color: #ffffff;
   @include clearfix;
 }
@@ -131,12 +137,18 @@ h4 {
   }
 }
 
-.header-link-next {
+.header-link-next, .header-link-next a {
   float: right;
+  cursor: e-resize;
 }
 
-.header-link-prev {
+.header-link-prev, .header-link-prev a {
   float: left;
+  cursor: w-resize;
+}
+
+.header-responders-count {
+  color: lighten($color-text, 50%);
 }
 
 .navigate-areas {
@@ -149,15 +161,31 @@ h4 {
   }
 }
 
+.header-link-destination {
+  display: block;
+  @include adjust-font-size-to(10px);
+}
 
 
 .summary-header {
   @include clearfix();
-  height: 180px;
+  height: 170px;
   text-align: center;
   h3 {
     @include adjust-font-size-to(24px);
   }
+}
+
+.summary-value {
+  font-weight: $font-bold;
+  display: inline-block;
+  letter-spacing: -0.08em;
+  font-size: 38px;
+  line-height: 74px;
+}
+
+.summary-value--age {
+  color: $sky;
 }
 
 .summary-icons {
@@ -172,6 +200,22 @@ h4 {
   line-height: 74px;
 }
 
+.summary-icon--color-1 {
+    color: $sky;
+}
+
+.summary-icon--color-2{
+    color: $fire;
+}
+.summary-icon--color-3{
+    color: $grass;
+}
+.summary-icon--color-4{
+    color: $piggy;
+}
+.summary-icon--color-5{
+    color: $lemon;
+}
 .choice-graph {
 }
 
@@ -197,8 +241,9 @@ h4 {
 
 .choice-column {
   padding-bottom: 5px;
+  position: relative;
   //border-bottom: solid 1px #CCCCCC;
-  @include clearfix;
+
 }
 
 .choice-icon {
@@ -278,6 +323,51 @@ h4 {
   .choice-icon {
     color: $lemon;
   }
+}
+
+.choice-value {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  top: -35px;
+  left: 15px;
+  line-height: 14px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: $font-bold;
+  text-align: center;
+  background: $color-text;
+  color: $color-bg;
+  display: none;
+}
+
+.choice-value:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $color-text transparent transparent $color-text;
+      top: 24px;
+      left: 0;
+}
+
+
+.choice-column:hover {
+  cursor: help;
+  background: $color-bg;
+  
+  .choice-icon {
+    color: $color-text !important;
+  }
+  .choice-line {
+    background-color: $color-text !important;
+  }
+}
+
+.choice-column:hover .choice-value {
+  display: block;
 }
 
 .map-ranking-content {

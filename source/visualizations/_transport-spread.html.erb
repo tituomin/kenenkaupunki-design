@@ -17,8 +17,8 @@
 <% transport_label_public = "Joukkoliikenne" %>
 
 <div class="summary-header">
-  <div class="summary-icon">
-      <i class="maki-rail"></i>
+  <div class="summary-icon summary-icon--color-2">
+      <i class="maki-bicycle"></i>
   </div>
   <h3><%= transport_title %></h3>
 </div>
@@ -29,21 +29,25 @@
       <div class="choice-icon"><i class="<%= transport_icon_car %>"></i></div>
       <span class="choice-label"><%= transport_label_car %></span>
       <div class="choice-line-container"><div data-choice="car" class="choice-line choice-1" style="width: <%= transport_percent_car %>%"></div></div>
+      <div class="choice-value"><%= transport_percent_car %>%</div>
     </div>
     <div class="choice-column choice-column-2">
       <div class="choice-icon"><i class="<%= transport_icon_bike %>"></i></div>
       <span class="choice-label"><%= transport_label_bike %></span>
       <div class="choice-line-container"><div data-choice="bike" class="choice-line choice-2" style="width: <%= transport_percent_bike %>%"></div></div>
+      <div class="choice-value"><%= transport_percent_bike %>%</div>
     </div>
     <div class="choice-column choice-column-3">  
       <div class="choice-icon"><i class="<%= transport_icon_walk %>"></i></div>
       <span class="choice-label"><%= transport_label_walk %></span>
       <div class="choice-line-container"><div data-choice="walk" class="choice-line choice-3" style="width: <%= transport_percent_walk %>%"></div></div>
+      <div class="choice-value"><%= transport_percent_walk %>%</div>
     </div>
     <div class="choice-column choice-column-4">  
       <div class="choice-icon"><i class="<%= transport_icon_public %>"></i></div>
       <span class="choice-label"><%= transport_label_public %></span>
       <div class="choice-line-container"><div data-choice="public" class="choice-line choice-4" style="width: <%= transport_percent_public %>%"></div></div>
+      <div class="choice-value"><%= transport_percent_public %>%</div>
      </div>
   </div>
 </div>

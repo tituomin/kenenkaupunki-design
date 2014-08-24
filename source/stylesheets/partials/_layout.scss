@@ -23,6 +23,7 @@ $susy: (
   gutter-position: $gutter-position, 
   // advanced
   container: $container-width,
+  global-box-sizing: border-box,
   math: if($container-style == magic, fluid, $container-style),
   flow: if($from-direction == right, rtl, ltr),
   last-flow: if($omega-float == $from-direction, from, to),

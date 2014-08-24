@@ -19,8 +19,8 @@
 <% family_label_other = "Muu" %>
 
 <div class="summary-header">
-  <div class="summary-icon">
-      <i class="maki-warehouse"></i>
+  <div class="summary-icon summary-icon--color-3">
+      <i class="maki-school"></i>
   </div>
   <h3><%= family_title %></h3>
 </div>
@@ -30,27 +30,33 @@
     <div class="choice-column choice-column-1">
       <div class="choice-icon"><i class="<%= family_icon_single %>"></i></div>
       <span class="choice-label"><%= family_label_single %></span>
-      <div class="choice-line-container"><div data-choice="single" class="choice-line choice-1" style="width: <%= family_percent_single %>%"></div></div>
+      <div class="choice-line-container"><div data-choice="single" class="choice-line choice-1" style="width: <%= family_percent_single %>%"></div>
+      </div>
+      <div class="choice-value"><%= family_percent_single %>%</div>
     </div>
     <div class="choice-column choice-column-2">
       <div class="choice-icon"><i class="<%= family_icon_couple %>"></i></div>
       <span class="choice-label"><%= family_label_couple %></span>
       <div class="choice-line-container"><div data-choice="couple" class="choice-line choice-2" style="width: <%= family_percent_couple %>%"></div></div>
+      <div class="choice-value"><%= family_percent_couple %>%</div>
     </div>
     <div class="choice-column choice-column-3">  
       <div class="choice-icon"><i class="<%= family_icon_withkids %>"></i></div>
       <span class="choice-label"><%= family_label_withkids %></span>
       <div class="choice-line-container"><div data-choice="withkids" class="choice-line choice-3" style="width: <%= family_percent_withkids %>%"></div></div>
+      <div class="choice-value"><%= family_percent_withkids %>%</div>
     </div>
     <div class="choice-column choice-column-4">  
       <div class="choice-icon"><i class="<%= family_icon_group %>"></i></div>
       <span class="choice-label"><%= family_label_group %></span>
       <div class="choice-line-container"><div data-choice="group" class="choice-line choice-4" style="width: <%= family_percent_group %>%"></div></div>
+      <div class="choice-value"><%= family_percent_group %>%</div>
      </div>
     <div class="choice-column choice-column-5"> 
       <div class="choice-icon"><i class="<%= family_icon_other %>"></i></div>
       <span class="choice-label"><%= family_label_other %></span>
       <div class="choice-line-container"><div data-choice="other" class="choice-line choice-5" style="width: <%= family_percent_other %>%"></div></div>
+      <div class="choice-value"><%= family_percent_other %>%</div>
     </div>
   </div>
 </div>
