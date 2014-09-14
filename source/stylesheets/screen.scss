@@ -294,46 +294,65 @@ h4 {
   }
 }
 
-.choice-column-1 {
+@mixin choice-color-1 {
   .choice-line {
     background-color: $sky;
   }
-  .choice-icon {
+  .choice-icon, .summary-icon {
     color: $sky;
   }
 }
-.choice-column-2 {
+@mixin choice-color-2 {
   .choice-line {
   background-color: $fire;
   }
-  .choice-icon {
+  .choice-icon, .summary-icon {
     color: $fire;
   }
 }
-.choice-column-3 {
+@mixin choice-color-3 {
   .choice-line {
   background-color: $grass;
   }
-  .choice-icon {
+  .choice-icon, .summary-icon {
     color: $grass;
   }
 }
-.choice-column-4 {
+@mixin choice-color-4 {
   .choice-line {
   background-color: $piggy;
   }
-  .choice-icon {
+  .choice-icon, .summary-icon {
     color: $piggy;
   }
 }
-.choice-column-5 {
+@mixin choice-color-5 {
   .choice-line {
   background-color: $lemon;
   }
-  .choice-icon {
+  .choice-icon, .summary-icon {
     color: $lemon;
   }
 }
+
+.choice-color-age { @include choice-color-1 }
+
+.choice-color-single { @include choice-color-1 }
+.choice-color-couple { @include choice-color-2 }
+.choice-color-withkids { @include choice-color-3 }
+.choice-color-group { @include choice-color-4 }
+.choice-color-other { @include choice-color-5 }
+
+.choice-color-verylikely { @include choice-color-1 }
+.choice-color-quitelikely { @include choice-color-2 }
+.choice-color-notsure { @include choice-color-3 }
+.choice-color-quiteunlikely { @include choice-color-4 }
+.choice-color-veryunlikely { @include choice-color-5 }
+
+.choice-color-car { @include choice-color-1 }
+.choice-color-bike { @include choice-color-2 }
+.choice-color-walk { @include choice-color-3 }
+.choice-color-public { @include choice-color-4 }
 
 .choice-value {
   position: absolute;
