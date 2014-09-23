@@ -19,7 +19,7 @@ coverage
 rdoc
 pkg
 
-public/stylesheets/*
+public
 
 beautifier.html
 

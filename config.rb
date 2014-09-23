@@ -1,6 +1,8 @@
+set :build_dir, 'public'
 ###
 # Compass
 ###
+
 
 # Change Compass configuration
 # compass_config do |config|
@@ -24,7 +26,7 @@
 #   page "/admin/*"
 # end
 
-activate :directory_indexes
+#activate :directory_indexes
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
