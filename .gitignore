@@ -21,6 +21,8 @@ pkg
 
 public/stylesheets/*
 
+beautifier.html
+
 ## PROJECT::SPECIFIC
 *.gem
 .rvmrc
