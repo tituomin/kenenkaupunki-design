@@ -51,7 +51,8 @@ body {
  font-family: $default-font; 
  font-weight: 400;
  background-color: $color-bg;
-  color: $color-text;
+ color: $color-text;
+ overflow-x: hidden;
 }
   
 a {
@@ -123,6 +124,19 @@ h4 {
       color: $fire;
     }
   }
+}
+
+.g-info-section.neighborhood-map #neighborhood-name {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  z-index: 100;
 }
 
 .g-info-section.neighborhood-input {
