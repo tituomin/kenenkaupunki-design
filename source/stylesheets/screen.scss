@@ -125,6 +125,52 @@ h4 {
   }
 }
 
+.g-info-section.neighborhood-input {
+  background-color: white;
+  .neighborhood-input-element {
+    max-width: 300px;
+    margin: 0 auto;
+    &.neighborhood-autocomplete-menu-anchor {
+      position: relative;
+    }
+    #neighborhood-text-input {
+      padding: 4px;
+      font-size: 18px;
+      width: 300px;
+      line-height: 20px !important;
+      color: #999;
+      font-style: italic;
+      &.has-neighborhood, &.has-text {
+        color: black;
+        font-style: normal;
+      }
+    }
+    .neighborhood-autocomplete-menu {
+      z-index: 10;
+      overflow-x: hidden;
+      background-color: rgba(255,255,255,0.5);
+      box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 300px;
+      border-radius: 4px;
+      padding: 4px;
+      min-height: 20px;
+      border: 1px solid black;
+      .neighborhood-autocomplete-menu-item {
+        color: rgba(50,50,50,0.95);
+        display: block;
+      }
+      .neighborhood-autocomplete-menu-item:hover {
+        color: rgba(255,255,255,0.95);
+        background-color: rgba(50,50,50,50.95);
+      }
+    }
+  }
+}
+
+
 .page-header {
   @include clearfix;
   padding: 12px 0;

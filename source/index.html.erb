@@ -1,6 +1,20 @@
 <% @title = "Kenen Helsinki 2050?" %>
 <% @pageclass = "front" %>
 
+<div class="g-info-section neighborhood-input">
+    <div class="neighborhood-input-label neighborhood-input-element">Valitse kaupunginosa</div>
+    <div class="neighborhood-input-element">
+        <input id="neighborhood-text-input" type="text" class="hint"
+               size="30" defaultValue="syötä hakusana tai valitse valikosta">
+        <div class="neighborhood-autocomplete-menu-anchor neighborhood-input-element">
+            <div class="neighborhood-autocomplete-menu">
+                <a href="#" class="neighborhood-autocomplete-menu-item">Kallio</a>
+                <a href="#" class="neighborhood-autocomplete-menu-item">Arabia</a>
+                <a href="#" class="neighborhood-autocomplete-menu-item">Vallila</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="g-info-section neighborhood-map">
     <div id="neighborhoods">
         <div id="neighborhood-map"></div>
